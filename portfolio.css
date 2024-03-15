@@ -1,0 +1,790 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+.navbar img{
+    width: 200px;
+    height: 30px;
+    padding-left: 30px;
+}
+.navbar-nav li a{
+    color: white;
+}
+.navbar-nav li a:hover{
+    color: aqua;
+    transition: .5s;
+    transform: translateY(-10px);
+    border-bottom: 2px solid aqua;
+}
+.navbar-nav{
+    padding-right: 40px;
+}
+.navbar-nav li{
+    margin-left: 20px;
+}
+.navbar-toggler{
+    background-color: white;
+    color: aqua;
+    font-size: 15px;
+}
+/* -------------------------header----------------------- */
+#header{
+    background-image: url(images/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text-area{
+    margin: 80px 20px;
+}
+.text-area h3{
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+}
+.text-area h1{
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+}
+.text-area h2{
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+}
+.auto-type{
+    color: aqua;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+}
+.text-area p{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+}
+.text-area button{
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: aqua;
+    margin-left: 20px;
+}
+.text-area button:hover{
+    background-color: aliceblue;
+    color: black;
+    transition: .5s;
+}
+#header .image img{
+    margin: 80px 20px;
+    height: 400px;
+    border-radius: 50%;
+    border: 5px solid white;
+    padding: 20px 70px;
+    animation: mover 1s infinite alternate;
+    
+}
+@keyframes mover{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+#header .image{
+    margin-left: 70px;
+}
+/* ---------------about------------------ */
+#about{
+    margin: 40px 0;
+    background-color: #050b4d;
+    padding: 20px 0;
+
+}
+#about .all-about .img img{
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+#about .all-about .img{
+    background-color: white;
+    width: fit-content;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px black;
+}
+#about .all-about .img P{
+    font-size: 12px;
+    font-weight: 600;
+}
+#about .all-about .icons a i{
+    margin-right: 2px;
+    color: black;
+}
+#about .all-about .icons a i:hover{
+    transform: translateY(-10px);
+    transition: .5s;
+}
+#about .all-about .img:hover .about-details{
+    display: block;
+    transition: 1s;
+}
+#about .all-about .img:hover .p1{
+    display: none;
+}
+#about .all-about .img:hover{
+    border-radius: 10px;
+    transition: 1s;
+}
+#about .about{
+    margin: 10px 0;
+}
+#about .about .me p img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+#about .about .me p {
+    color: white;
+}
+#about .all-about .about-details{
+    display: none;
+}
+/* -------resume-------- */
+#resume{ 
+    background-image: url(images/footerrr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+#resume .row{
+    background-color: aliceblue;
+    margin-top: 30px;
+    color: black;
+    background-image: url(images/resume\ bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#resume .bor{
+    border-left: 4px solid black;
+}
+#resume h3{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right , yellow , orange);
+    width: fit-content;
+    padding: 5px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* --------------services------------------ */
+#services{
+    margin: 30px 0;
+}
+#services .services{
+    box-shadow: 5px 5px 10px black;
+    height: 300px;
+    margin-top: 40px;
+}
+#services .services:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+#services .services h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: black;
+    background-color: purple;
+    padding: 10px 0;
+}
+#services .services img{
+    height: 100px;
+    width: 100px;
+}
+#services .services p{
+    padding: 5px;
+}
+#services h3{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right , yellow , orange);
+    width: fit-content;
+    padding: 5px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* --------------------my projects------------------- */
+#project{
+    margin: 40px 0;
+    background-image: url(images/projects\ bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    
+}
+#project .h3{
+    color: aqua;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                  font-weight: 500;
+}
+/* -------project1----- */
+#project .project1{
+    background-image: url(images/electronic\ proj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    box-shadow: 20px 20px 20px black;
+    margin:20px 0 ;
+}
+#project .project1 p{
+    display: none;
+    color: white;
+    padding-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+}
+#project .project1:hover h3{
+    display: none;
+}
+#project .project1:hover p{
+    display: block;
+}
+#project .project1 h3{
+    color: white;
+    padding-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+}
+#project .project1:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+}
+/* -------------project 2--------------- */
+#project .project2{
+    background-image: url(images/quotes\ proj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    box-shadow: 20px 20px 20px black;
+    margin:20px 0 ;
+}
+#project .project2 p{
+    display: none;
+    color: white;
+    padding-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+}
+#project .project2:hover h3{
+    display: none;
+}
+#project .project2:hover p{
+    display: block;
+}
+#project .project2 h3{
+    color: white;
+    padding-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+}
+#project .project2:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+}
+/* ------------project 3--------------- */
+#project .project3{
+    background-image: url(images/resume\ proj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    box-shadow: 20px 20px 20px black;
+    margin:20px 0 ;
+}
+#project .project3 p{
+    display: none;
+    color: white;
+    padding-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+}
+#project .project3:hover h3{
+    display: none;
+}
+#project .project3:hover p{
+    display: block;
+}
+#project .project3 h3{
+    color: white;
+    padding-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+}
+#project .project3:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+}
+/* --------project 4-------- */
+#project .project4{
+    background-image: url(images/fitness\ proj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    box-shadow: 20px 20px 20px black;
+    margin:20px 0 ;
+}
+#project .project4 p{
+    display: none;
+    color: white;
+    padding-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+}
+#project .project4:hover h3{
+    display: none;
+}
+#project .project4:hover p{
+    display: block;
+}
+#project .project4 h3{
+    color: white;
+    padding-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+}
+#project .project4:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+}
+/* ---------project 5-------- */
+#project .project5{
+    background-image: url(images/business\ proj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    box-shadow: 20px 20px 20px black;
+    margin:20px 0 ;
+}
+#project .project5 p{
+    display: none;
+    color: white;
+    padding-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+}
+#project .project5:hover h3{
+    display: none;
+}
+#project .project5:hover p{
+    display: block;
+}
+#project .project5 h3{
+    color: white;
+    padding-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+}
+#project .project5:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+}
+/* ----------project 6---------- */
+#project .project6{
+    background-image: url(images/wallpaper\ proj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    box-shadow: 20px 20px 20px black;
+    margin:20px 0 ;
+}
+#project .project6 p{
+    display: none;
+    color: white;
+    padding-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+}
+#project .project6:hover h3{
+    display: none;
+}
+#project .project6:hover p{
+    display: block;
+}
+#project .project6 h3{
+    color: white;
+    padding-top: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+}
+#project .project6:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+}
+/* -----------current work---------- */
+.current-work{
+    padding: 20px 0;
+    background-image: url(images/projects\ bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    box-shadow: 20px 20px 20px black;
+    margin-top: -120px;
+    border: 5px solid white;
+    animation: crnt-ani 1s infinite alternate;
+}
+@keyframes crnt-ani{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+.current-work h1{
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+    
+}
+.current-work h2{
+    font-weight: 600;
+    color: white;
+    padding-left: 100px;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                 
+}
+.current-work .crnt-wrk{
+    color: aqua;
+    font-weight: 800;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+}
+/* ------------completed projects---------------- */
+#completed-projects{
+    background-image: linear-gradient(to right , #7a07f5 , #04b9d1);
+    margin-top: 50px;
+}
+.counter{
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+}
+
+#completed-projects p{
+    color: white;
+    font-size: 20px;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+}
+/* --------------------skills--------------------- */
+#skills{
+    margin: 20px 0;
+    background-color: #000;
+}
+#skills h1{
+    color: aqua;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+                  text-align: center;
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                  font-weight: 500;
+}
+#skills .bottom-row{
+    padding: 20px 0;
+}
+#skills .upper-row img{
+    margin-top: 30px;
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 5px;
+}
+#skills .image img{
+    width: 350;
+    height: 260px;
+    margin-top: 70px;
+    box-shadow: 5px 5px 5px #d9f0bb;
+}
+#skills .skills{
+    padding-top: 20px;
+}
+#skills .skills label{
+    margin: 5px 0;
+    color: white;
+    text-shadow: -1px -1px 4px #000,  
+    1px -1px 4px #000,
+   -1px 1px 4px #000,
+    1px 1px 4px #000;
+}
+#skills .skills .progress .progress-bar{
+    background-color: #02db02;
+    color: #000;
+    font-weight: 800;
+}
+/* ----------------------stay connected-------------------------- */
+#stay{
+    margin: 30px 0;
+}
+#stay .row{
+    padding: 20px 0;
+    background-image: url(images/stay\ connected.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+#stay .row h1{
+    color: black;
+                  text-align: center;
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                  font-weight: 500;
+}
+#stay .image img{
+    width: 100px;
+    height: 80px;
+}
+#stay .image a img:hover{
+    transform: translateY(-10px);
+    transition: .5s;
+}
+/* ----------------location------------------- */
+#location{
+    margin-top: 20px;
+}
+#location h3{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right , yellow , orange);
+    width: fit-content;
+    padding: 5px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 20px;
+}
+#location iframe{
+    width: 80%;
+    height: 300px;
+}
+/* ------------------footer---------------------- */
+#footer{
+    padding: 20px 0;
+    margin-top: 80px;
+    background-image: url(images/footerrr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+#footer h1 span{
+    color: #02db02;
+}
+#footer h1{
+    font-weight: bold;
+    text-align: center;
+    text-shadow: -1px -1px 4px #000,  
+                  1px -1px 4px #000,
+                 -1px 1px 4px #000,
+                  1px 1px 4px #000;
+}
+#footer .left img{
+    margin-top: 20px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+#footer .left .email{
+    display: flex;
+}
+#footer .left .email i{
+    font-size: 30px;
+    margin-right: 10px;
+    padding-top: 10px;
+    color: #02db02;
+}
+#footer .left .call{
+    display: flex;
+}
+#footer .left .call i{
+    font-size: 30px;
+    margin-right: 10px;
+    padding-top: 10px;
+    color: #02db02;
+}
+#footer .left .icons i{
+    margin-right: 10px;
+    font-size: 35px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+}
+#footer .left .icons i:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+#footer .right .input-fields{
+    margin-top: 20px;
+}
+#footer .right .input-fields input{
+    padding: 5px 15px;
+    border-radius: 30px;
+    background-color: #343835;
+    color: white;
+    border: 1px solid #02db02;
+}
+#footer .right .input-fields .message{
+    margin-top: 30px;
+}
+#footer .right .input-fields .message input{
+    width: 100%;
+    height: 100px;
+    padding: 1 15px;
+}
+#footer .right span{
+    border-radius: 30px;
+    border: 1px solid #02db02;
+    padding: 10px 15px;
+    margin: 30px 0;
+    color: #78807a;
+}
+#footer .right span i{
+    font-size: 30px;
+    color: black;
+    background-color: #02db02;
+    border-radius: 50%;
+    padding: 10px;
+}
+#footer .right span i:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+#footer .right .input-fields .inp{
+    margin-top: 10px;
+}
+/* ------------copyright------------------ */
+#copyright{
+    background-color: #29074f;
+}
+#copyright p{
+    text-align: center;
+    color: white;
+    background-color: #29074f;
+}
